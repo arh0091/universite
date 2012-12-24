@@ -1,0 +1,68 @@
+/*
+	Global
+*/
+html, body{
+	font-size: 13px;
+}
+
+// base color
+@color1 : #61807E;
+@color2 : #52948F;
+@color3 : #DAB68F;
+@color4 : #BF0404;
+@color5 : #8D2120;
+
+.container.main{
+	padding-top:1em;
+	border-top:5px solid @color4;
+	height: auto;
+	height: 100%;
+}
+
+/*
+	Header
+*/
+header.header{
+	.page-header{
+		margin-bottom: 10px;
+		margin-top: 10px;
+		h1{
+			font-size: 24px;
+			line-height: 32px;
+		}
+	}
+}
+
+/*
+	Navigation
+*/
+nav{
+	.nav-pills{
+		li{
+			a{
+				color:#fff;
+				background: @color4;
+				margin-right: 0.5em;
+			}
+			a:hover{
+				color:#fff;
+				background: @color5;
+			}
+		}
+	}
+}
+
+
+/*
+	Footer
+*/
+footer{
+	margin-top: 1em;
+	.footer{
+		border-top: 1px solid @color4;
+		padding-top: 1em;
+	}
+}
+
+
+
