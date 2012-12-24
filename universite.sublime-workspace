@@ -248,6 +248,7 @@
 	},
 	"file_history":
 	[
+		"/Applications/XAMPP/xamppfiles/htdocs/universite/application/controllers/tri.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/universite/application/controllers/index.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/universite/assets/css/style.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/universite/application/config/config.php",
@@ -262,7 +263,6 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/universite/application/views/mahasiswa/tri.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/universite/application/core/AP_Loader.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/universite/application/core/AP_controller.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/universite/application/controllers/tri.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/universite/application/core/AP_Auth.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/universite/application/libraries/AP_Auth.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/universite/application/views/template/content.php",
