@@ -3,6 +3,7 @@
 */
 html, body{
 	font-size: 13px;
+	background: url('http://creattica.com/images/backgrounds/noise.png');
 }
 
 // base color
@@ -19,11 +20,44 @@ html, body{
 	height: 100%;
 }
 
+.simplebox{
+  outline: none;
+  border:none !important;
+  box-shadow:none !important;
+  border-bottom: 1px dashed #d2d2d2 !important;
+  color: @color4 !important;
+  border-radius: 0 !important;
+  background: transparent!important;
+}
+/* webkit solution */
+::-webkit-input-placeholder { text-align:right; font-size: 11px }
+/* mozilla solution */
+input:-moz-placeholder { text-align:right; font-size:11px;}
+input{
+	font-size: 13px!important;
+}
 .b-top-3{
 	margin-top: 3em;
 	border-top: 5px solid #d2d2d2;
 }
-
+.center{
+	text-align: center;
+	vertical-align: middle !important;
+}
+.left{
+	text-align: left;
+}
+.right{
+	text-align: right;
+}
+.action-login{
+	margin-top: 2em;
+	.btn-login{
+		border-radius: 16px;
+		padding:0.5em 3em;
+		border:1px solid #d2d2d2;
+	}
+}
 /*
 	Header
 */
@@ -31,10 +65,12 @@ header.header{
 	.page-header{
 		margin-bottom: 10px;
 		margin-top: 10px;
-		h1{
+		h1.logo{
+			font-family: "HelveticaNeue-Light", "Helvetica Neue";
 			font-size: 24px;
 			line-height: 32px;
 		}
+		border-color: #d2d2d2;
 	}
 }
 
@@ -62,6 +98,53 @@ nav{
 */
 .content{
 	height:auto;
+	margin-bottom: 2em;
+	.login{
+		height:100%;
+		vertical-align: middle;
+		margin-top: 1em;
+	}
+	legend{
+		border:none;
+	}
+	.mhs{
+		margin-bottom: 2em;
+	}
+	.mhs-list{
+		padding:10px;
+		background:whiteSmoke;
+		position:relative;
+		.tweet{
+			background: #00BBF5;
+			padding:5px;
+			margin-bottom: 5px;
+			color:#373737;
+			text-shadow:0 0.8px 0 #fff;
+			p{ padding:0; margin:0; font-size: 11px; line-height: 15px;}
+			.tweet-user{
+				font-weight: bold;
+			}
+		}
+		.fb{
+			background: #3B5998;
+			padding:5px;
+			margin-bottom: 5px;
+			color:#f2f2f2;
+			text-shadow:0 0.8px 0 #fff;
+			p{ padding:0; margin:0; font-size: 11px; line-height: 15px;}
+			.fb-user{
+				font-weight: bold;
+			}
+		}
+	}
+	.nim{
+		vertical-align: middle;
+		font-size: 18px;
+		font-weight: bold;
+		padding:0.8em;
+		background: #ccc;
+		text-shadow:0px 1px 0px #d2d2d2;
+	}
 }
 
 
@@ -71,7 +154,9 @@ nav{
 footer{
 	margin-top: 1em;
 	.footer{
-		border-top: 1px solid @color4;
+		padding:1em;
+		background: @color3;
+		border-top: 5px solid @color4;
 		padding-top: 1em;
 	}
 }

@@ -41,7 +41,7 @@ class AP_Loader extends CI_Loader{
 		return "";
 	}
 
-	function render_image($name = null, $options = array()){
+	function render_img($name = null, $options = array()){
 
 		$inline_option = '';
 

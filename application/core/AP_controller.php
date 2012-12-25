@@ -28,10 +28,16 @@ class AP_Controller extends CI_Controller{
 		$this->data['footer'] = $this->load->view('template/footer');
 	}
 
-	function setContent($dest = 'welcome_message', $data_content = null, $data_header = null, $data_footer = null){
-		$this->getHeader($data_header);
-		$this->load->view($dest, $data_content);
-		$this->getFooter($data_footer);
+	function setContent($dest = 'welcome', $data_content = null, $data_header = null, $data_footer = null){
+		if($data_header==1 and $data_footer==1){
+			$this->load->view('template/header-empty');			
+			$this->load->view($dest, $data_content);
+			$this->load->view('template/footer-empty');			
+		} else {
+			$this->getHeader($data_header);
+			$this->load->view($dest, $data_content);
+			$this->getFooter($data_footer);
+		}
 	}
 
 }
