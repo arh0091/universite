@@ -49,7 +49,7 @@ class Secure_Controller extends AP_Controller{
         parent::__construct();
  
         $this->load->library('session');
-        $this->load->library('cookie');
+        $this->load->helper('cookie');
         $this->load->helper('url');
  
         if($this->session->userdata('user') === FALSE and $this->input->cookie('user', TRUE))
